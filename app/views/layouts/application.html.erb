@@ -27,7 +27,8 @@
   <%= stylesheet_link_tag    'semantic', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'homepage', media: 'all', 'data-turbolinks-track' => true %>
 
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>-->
+  <%= javascript_include_tag 'jquery', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'semantic', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'homepage', 'data-turbolinks-track' => true %>
 
@@ -62,7 +63,8 @@
             <a class="item">Community</a>
           </div>
         </div>
-        <img src="images/cat.png" class="ui medium image">
+        <!--<img src="images/cat.png" class="ui medium image">-->
+        <%= image_tag 'cat.png', class: 'ui medium image' %>
         <div class="ui hidden transition information">
           <h1 class="ui inverted header">
             An Old Cat Can Learn New Tricks
